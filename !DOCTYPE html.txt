@@ -1,0 +1,2211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta property="og:title" content="Adriana Reyes Realty" />
+  <meta property="og:description" content="Su Agente de Bienes Raices en español, en el Triad NC" />
+  <meta property="og:image" content="https://storage.googleapis.com/msgsndr/48hz6AHqaU6NMstFnHTl/media/687924ba57dd601ddd833c50.png" />
+  <meta property="og:url" content="https://adrianareyesrealty.com/" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Adriana Reyes Realty</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="https://storage.googleapis.com/msgsndr/48hz6AHqaU6NMstFnHTl/media/689645cf649372b058d13396.png" type="image/x-icon">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Custom Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@300;700;900&display=swap" rel="stylesheet">
+
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WK5TQSM');
+  </script>
+  <!-- End Google Tag Manager -->
+
+  <style>
+    :root{
+      --rojo:#FF3838;
+      --rojo-2:#FE6A6A;
+      --nav-bg: rgba(0,0,0,.05);
+    }
+
+    * { box-sizing: border-box; }
+
+    html,body{ 
+      margin:0;
+      padding:0 !important;
+      padding-left: 0 !important;
+      height:100%; 
+      width:100%;
+      overflow-x: hidden !important;
+    }
+
+    section {
+      padding-left: 0 !important;
+      margin-left: 0 !important;
+    }
+
+    body { font-family: 'Poppins', Roboto, sans-serif; }
+
+    /* NAVBAR con blur (visible en cualquier fondo) */
+    .custom-navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding-top: 0 !important;
+        padding-bottom: 5px;
+        z-index: 1000;
+        background: transparent;
+    }
+
+    .custom-navbar::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 100%);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        z-index: -1;
+    }
+    .custom-navbar .nav-link,.custom-navbar .navbar-brand{
+      color:#fff; font-weight:600; text-transform:uppercase; letter-spacing:.5px;
+    }
+    .custom-navbar .nav-link:hover{color:#ebcc67;}
+
+    .navbar-nav .nav-item:last-child {
+      margin-left: 10px;
+    }
+
+    .navbar .dropdown-menu {
+      left: 0;
+      right: auto;
+      transform: none;
+      min-width: max-content;
+      white-space: nowrap;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    /* Alinea el texto dentro del fondo */
+    .navbar .dropdown-menu li a {
+      display: block;
+      padding: 6px 12px;
+      text-align: left;
+      white-space: nowrap;
+    }
+
+    .navbar .dropdown:hover .dropdown-menu {
+      left: 0 !important;
+      right: auto !important;
+      transform: translateX(0) !important;
+    }
+
+    .flag-icon {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 3px;
+      padding: 1px;
+    }
+
+    .dropdown-transparente {
+      background-color: rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(8px);
+      border-radius: 8px;
+      color: #fff;
+      cursor: pointer;
+      width: 220px;
+    }
+
+    .dropdown-transparente .dropdown-item {
+      color: #fff;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+    }
+
+    .dropdown-transparente .dropdown-item:hover {
+      color: #000;
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    @media (max-width: 768px) {
+      body { 
+        overflow-x: hidden !important; 
+        padding: 0 !important; 
+        padding-left: 0 !important;
+      }
+      * {
+        max-width: 100vw !important;
+      }
+      section, .container, .container-fluid {
+        width: 100% !important;
+        max-width: 100vw !important;
+        overflow-x: hidden !important;
+        padding-left: 0 !important;
+      }
+    }
+
+    /* ===== SECCIÓN 1: video ===== */
+    #section1{position:relative;height:100vh;overflow:hidden;}
+    .video-background{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;}
+    .imagen-fija{position:absolute;top:40%;left:50%;transform:translate(-50%,-50%);max-width:20vw;height:auto;z-index:1;}
+
+    #section1::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.7) 0%,
+        rgba(0, 0, 0, 0) 40%,
+        rgba(0, 0, 0, 0) 100%
+      );
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .botones {
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 20px;
+        z-index: 1;
+    }
+
+    .botones a,
+    .botones button {
+        flex: 1;
+        max-width: 220px;
+        background: linear-gradient(to bottom, #FF3838, #FE6A6A);
+        border: none;
+        padding: 12px 0;
+        width: 220px;
+        border-radius: 25px;
+        color: white;
+        font-size: 1.3rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .botones a:hover,
+    .botones button:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .dropdown button {
+        flex: 1;
+        background: linear-gradient(to bottom, #FF3838, #FE6A6A);
+        border: none;
+        padding: 12px;
+        border-radius: 25px;
+        color: white;
+        font-size: 1.3rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .dropdown button:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        color: white;
+    }
+
+    .dropdown-menu {
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 8px;
+        color: white;
+    }
+
+    /* Desktop: muestra botones normales, oculta dropdown */
+    .botones-dropdown { display: none; }
+
+    /* HERO */
+    .hero-section {
+      position: relative;
+      height: 100vh;
+      width: 100%;
+      overflow: hidden;
+    }
+    #heroVideo {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    /* Flecha / flecha hacia abajo de scroll en section1: home-video */
+    #section1 .scroll-cue{
+      position: absolute;
+      left: 50%;
+      bottom: clamp(14px, 3vh, 50px);
+      transform: translateX(-50%);
+      width: 36px; height: 36px;
+      border-radius: 9999px;
+      border: 2px solid rgba(255,255,255,.85);
+      background: rgba(0,0,0,.25);
+      -webkit-backdrop-filter: blur(3px);
+      backdrop-filter: blur(3px);
+      display: grid; place-items: center;
+      color: #fff;
+      cursor: pointer;
+      z-index: 3;
+      animation: cue-bounce 2.1s ease-in-out infinite;
+      transition: transform .2s ease, background .2s ease, border-color .2s ease;
+    }
+
+    #section1 .scroll-cue:hover{
+      background: rgba(0,0,0,.35);
+      border-color: #fff;
+      transform: translateX(-50%) scale(1.05);
+    }
+
+    @keyframes cue-bounce{
+      0%, 100% { transform: translateX(-50%) translateY(0); opacity: .95; }
+      50%      { transform: translateX(-50%) translateY(6px); opacity: .8; }
+    }
+
+    /* El SVG hereda el color blanco */
+    #section1 .scroll-cue svg{ 
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Móvil: oculta botones y muestra dropdown */
+    @media (max-width: 900px) {
+      .imagen-fija {max-width:65vw !important;}
+      .botones { display: none; }
+      .botones-dropdown {
+        display: block;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10;
+      }
+      #section1 .scroll-cue { bottom: 100px !important; }
+    }
+    /* ===== Fin SECCIÓN 1 ===== */
+
+    /* ====== SECCIÓN 2: home ====== */
+    #section2{
+      position: relative;
+      background:url('https://storage.googleapis.com/msgsndr/48hz6AHqaU6NMstFnHTl/media/689649f764937237fbd139b0.png') center/cover no-repeat;
+      min-height:100vh; display: flex; align-items: center; color:#fff; justify-content: center; padding:100px 20px 60px; overflow: hidden;
+    }
+    #section2::before { content: ""; position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 45%); z-index: 0; }
+    #section2 .container { position: relative; z-index: 2; max-width: 1200px; display: flex; align-items: center; gap: 30px; }
+    #section2 h1{color:var(--rojo);font-weight:900;font-size:clamp(2.2rem,4.2vw,3.2rem);text-shadow:2px 2px 6px rgba(0,0,0,.75);}
+    #section2 p{font-size:clamp(1.1rem,2vw,1.6rem);line-height:1.75;margin-top:22px;text-shadow:2px 2px 6px rgba(0,0,0,.85);}
+    .cta-wrap{margin-top:28px; z-index: 3;}
+    .btn-cta{
+        display: inline-block;
+        background: #f05959;       
+        color: #fff;               
+        font-weight: 800;
+        font-size: 1.3rem;         
+        border: none;
+        border-radius: 14px;
+        padding: 14px 40px;
+        box-shadow: 0 6px 18px rgba(0,0,0,.22);
+        text-align: center;
+        text-decoration: none;
+        margin-top: 0;
+        z-index: 3;
+    }
+
+    .section2-content {
+      max-width: 640px;
+      margin-left: 20% !important;
+    }
+    
+    .btn-cta:hover{
+        filter: brightness(.60);
+    }
+
+    .adriana-img {
+      position: absolute; 
+      margin: 0 auto; 
+      bottom: 0; 
+      right: 5%; 
+      height: auto; 
+      width: clamp(200px, 32vw, 600px); 
+      z-index: 2;
+    }
+
+    .frase-img {
+      position: absolute;
+      bottom: 5%;
+      right: 5%;
+      width: clamp(200px, 35vw, 600px);
+      z-index: 3;
+    }
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.3), transparent);
+      z-index: 1;
+    }
+
+    @media (max-width: 768px) {
+      #section2 {
+        position: relative;
+        background-attachment: scroll;
+        background-position: center top;
+        background-size: cover;
+        min-height: 100vh;
+        padding: 100px 0 80px !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        z-index: 10;
+      }
+      #section2::before {
+        background: rgba(0, 0, 0, 0.6);
+      }
+      #section2 .container {
+        z-index: 15;
+        position: relative;
+      }
+      #section2 h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+      }
+      #section2 .btn-cta {
+        width: 80%;
+        max-width: 280px;
+        font-size: 1.1rem;
+        padding: 12px 0;
+      }
+      #section2 .section2-content { font-size: 0.6em; margin-left: 0 !important; }
+      #section2 .cta-wrap { margin-top: 24px; }
+      .adriana-img, .frase-img{ display: none !important; }
+    }
+    /* ===== Fin SECCIÓN 2 ===== */
+    
+    /* ====== SECCIÓN 3: MLS (Cajas de ciudades) ====== */
+    /* Contenedor principal */
+    .communities-section{
+      background:#cacaca;
+      height: 100vh;          
+      display:flex;           
+      align-items:center;    
+      justify-content:center; 
+      padding: 0;             
+    }
+
+    .communities-wrap{
+      width:100vw;
+      margin-left: calc(50% - 50vw);
+      display:grid;
+      grid-template-columns: clamp(300px,26vw,520px) 1fr;
+      align-items:center;    
+      gap: 40px;            
+    }
+
+    /* Columna izquierda (título + botón) */
+    .communities-left{
+      padding: 0 clamp(16px,3vw,32px);
+      position: static;    
+      text-align: left;    
+    }
+
+    .communities-heading{
+      margin: 0 0 18px 0;
+      line-height: 1;
+      letter-spacing: .02em;
+      text-transform: uppercase;
+      font-family: "Montserrat", system-ui, sans-serif;
+    }
+    .communities-heading .thin{
+      display:block; font-weight:300;
+      font-size: clamp(1.4rem,3.2vw,2.6rem);
+    }
+    .communities-heading .bold{
+      display:block; font-weight:900;
+      font-size: clamp(1.8rem,3.8vw,3.0rem);
+    }
+
+    .btn-view-all.big{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      margin-top: 22px;
+      padding: 18px 48px;
+      min-width: 300px;
+      font-size: clamp(1.1rem,1.6vw,1.25rem);
+      line-height: 1;
+      font-weight:900;
+      border-radius: 16px;
+      background: linear-gradient(90deg, var(--rojo), var(--rojo-2));
+      color:#fff; text-decoration:none;
+      box-shadow: 0 10px 24px rgba(0,0,0,.12);
+      transition: transform .2s ease, filter .2s ease;
+    }
+    .btn-view-all.big:hover{ transform: translateY(-1px); filter: brightness(.9); }
+
+    /* Grid derecha: SIN espacios entre tarjetas, grande y centrada */
+    .communities-grid{
+      display:grid;
+      grid-template-columns: repeat(3, minmax(0,1fr));
+      grid-auto-rows: minmax(280px, 34vh);  
+      gap: 0;  
+      width: 100%;
+      justify-content: center; 
+      align-content: center;
+    }
+
+    /* Tarjeta */
+    .comm-card{
+      position:relative; display:block; overflow:hidden;
+      border-radius: 0; text-decoration:none; isolation:isolate;
+    }
+
+    /* Fondo (imagen) */
+    .comm-bg{
+      position:absolute; inset:0;
+      background-size:cover; background-position:center;
+      transform: scale(1); transition: transform .6s ease;
+      will-change: transform;
+    }
+
+    /* Oscurecido */
+    .comm-overlay{
+      position:absolute; inset:0;
+      background: linear-gradient(to bottom, rgba(0,0,0,.28), rgba(0,0,0,.50));
+      opacity:.85; transition: opacity .35s ease;
+    }
+
+    /* Títulos dentro de cada imagen: delgados/elegantes */
+    .comm-title{
+      position:absolute; inset:0; display:grid; place-items:center;
+      text-align:center; color:#fff;
+      text-shadow:0 2px 10px rgba(0,0,0,.55);
+      padding: 12px;
+      font-family: "Montserrat", system-ui, sans-serif;
+      text-transform: uppercase;
+    }
+    .comm-title strong{
+      display:block;
+      font-weight:300;
+      letter-spacing: .12em;
+      font-size: clamp(1.4rem,3vw,3.2rem);
+    }
+    .comm-title em{
+      display:block; font-style: normal;
+      font-weight:300; letter-spacing:.35em; opacity:.92;
+      font-size: clamp(.7rem,1vw,1rem);
+    }
+
+    /* Hover: zoom + oscurecido dentro del contenedor */
+    .comm-card:hover .comm-bg{ transform: scale(1.1); }
+    .comm-card:hover .comm-overlay{ opacity: .98; }
+
+    /* Responsive */
+    @media (max-width: 1470px){
+      .communities-left h2 { font-size: 5vw; }
+    }
+    @media (max-width: 1100px){
+      .communities-wrap{ grid-template-columns: clamp(260px,30vw,380px) 1fr; }
+    }
+    @media (max-width: 900px){
+      .communities-wrap{ grid-template-columns: 1fr; }
+      .communities-left{ position: static; margin: 0 16px 14px; }
+      .communities-grid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(200px, 32vh);
+      }
+    }
+    @media (max-width: 768px) {
+      #section3 { 
+        position: relative;
+        background-attachment: scroll;
+        background-position: center top;
+        background-size: cover;
+        min-height: 100vh;
+        padding-top: 120px;
+        padding-left: 0 !important;
+        display: flex;
+      }
+      .communities-left, .btn-view-all.big { display: none; }
+    }
+    @media (max-width: 520px){
+      #section3 { padding-top: 120px !important; }
+      .communities-grid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(200px, 34vh);
+      }
+      .communities-left, .btn-view-all.big { display: none; }
+    }
+    /* ===== Fin SECCIÓN 3 ===== */
+
+    /* ===== SECCIÓN 3-5: Descubre tu hogar ===== */
+    .home-value-section {
+      font-family: 'Montserrat', sans-serif;
+      color: #fff;
+      position: relative;
+      background-color: #ff3838;
+      background-image: url("https://storage.googleapis.com/msgsndr/48hz6AHqaU6NMstFnHTl/media/68e3ce446c057a80dec5084f.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      padding: 100px 20px;
+      overflow: hidden;
+    }
+
+    .title-image {
+      width: min(90%, 600px);
+      max-width: 700px;
+      margin: 0 auto 60px auto;
+      display: block;
+    }
+
+    /* Contenedor para 2 botones circulares */
+    .circle-buttons{
+      display:flex;
+      gap: 28px;
+      align-items:center;
+      justify-content:center;
+      flex-wrap:wrap;
+      margin-top: 10px;
+    }
+
+    .circle-btn {
+      width: 230px;
+      height: 230px;
+      border-radius: 50%;
+      background-color: #C62B2B;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .circle-btn img {
+      width: 150px;
+      height: auto;
+      display: block;
+    }
+    .circle-btn:hover {
+      transform: scale(1.08);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+    }
+
+    .home-value-text {
+      margin-top: 40px;
+      font-size: 1.2rem;
+      color: #fff;
+      opacity: 0.9;
+    }
+
+    /* MODAL estilos */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.75);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+      z-index: 2000;
+    }
+
+    .modal-overlay.show {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .modal-content {
+      background: #fff;
+      color: #000;
+      border-radius: 10px;
+      width: 90%;
+      max-width: 900px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      animation: fadeInUp 0.4s ease;
+    }
+
+    .modal-header {
+      background: linear-gradient(90deg, #ff3838, #fe6a6a);
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 25px;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .close-modal {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 1.8rem;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .close-modal:hover {
+      transform: scale(1.2);
+    }
+
+    .modal-body iframe {
+      width: 100%;
+      height: 80vh;
+      border: none;
+    }
+
+    @keyframes fadeInUp {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .title-image { width: 95%; margin-bottom: 40px; }
+      .circle-btn { width: 150px; height: 150px; }
+      .home-value-text { font-size: 1rem; margin-top: 25px; }
+      .circle-btn img { width: 100px; }
+    }
+    /* ===== Fin SECCIÓN 3-5 ===== */
+
+    /* ====== SECCIÓN 4: INSTAGRAM ====== */
+    .sk-ww-instagram-reels { /* galeria de reels de instagram */
+      max-height: 90vh !important;       
+      overflow-y: auto;        
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    /* Ocultar enlaces y bio del widget */
+    .sk-ww-instagram-reels .tutorial_link { 
+      display: none !important;
+    }
+    .sk-ww-instagram-reels .sk-profile__bio { 
+      display: none !important;
+    }
+
+    .sk-ww-instagram-reels .sk-profile {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      gap: 18px !important;
+      position: relative;
+      width: 100%;
+    }
+
+    /* Espacio a la izquierda y a la derecha para centrar el header */
+    .sk-ww-instagram-reels .sk-profile::before{
+      content: "";
+      width: var(--iglogo, 230px);
+      height: var(--iglogo, 230px);
+      flex: 0 0 var(--iglogo, 230px);
+      visibility: hidden;
+    }
+
+    .sk-ww-instagram-reels .sk-profile::after {
+      content: "";
+      width: var(--iglogo, 230px);
+      height: var(--iglogo, 230px);
+      flex: 0 0 var(--iglogo, 230px);
+      visibility: hidden; 
+    }
+
+    /* Centra los textos del bloque de perfil */
+    .sk-ww-instagram-reels .sk-profile__info,
+    .sk-ww-instagram-reels .sk-profile__title{
+      text-align: start !important;
+    }
+
+    /* Bloque de info + logo */
+    .sk-profile__details {
+      display: flex;
+      justify-content: center !important;
+      align-items: center !important;
+      gap: 40px;
+      margin-bottom: 20px;
+    }
+
+    /* Info del perfil (foto, usuario, followers, botón) */
+    .sk-profile__info {
+      text-align: start;
+    }
+
+    /* Botones follow y load more */
+    .sk-profile__follow-btn,
+    .sk-load-more-btn {
+      background: linear-gradient(to bottom, #FF3838, #FE6A6A) !important;
+      color: #fff !important;
+    }
+
+    /* Logo Instagram */
+    .sk-profile__details::after {
+      content: "";
+      display: block;
+      width: 130px;
+      height: 130px;
+      background: url('https://cdn-icons-png.flaticon.com/512/2111/2111463.png') no-repeat center/contain;
+      flex-shrink: 0;
+    }
+
+    /* Grilla de posts más compacta */
+    .sk-posts-container.sk-grid{
+      display: grid !important;
+      grid-template-columns: repeat(3, 1fr) !important; 
+      grid-auto-rows: 240px !important;                 
+      gap: 10px !important;                             
+      align-content: start;                             
+      justify-items: stretch;
+      align-items: stretch;
+    }
+
+    /* Cada ítem ocupa toda su celda */
+    .sk-posts-container.sk-grid .sk-grid-item{
+      width: 100% !important;
+      height: 100% !important;     
+      max-width: none !important;  
+      border-radius: 12px;
+      overflow: hidden;
+      margin: 0 !important;        
+    }
+
+    /* Imágenes/videos adaptados sin deformarse */
+    .sk-posts-container.sk-grid .sk-grid-item img,
+    .sk-posts-container.sk-grid .sk-grid-item video {
+      display:block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Responsive: tablets */
+    @media (max-width: 1024px){
+      .sk-posts-container.sk-grid{
+        grid-template-columns: repeat(2, 1fr) !important;
+        grid-auto-rows: 220px !important;
+      }
+    }
+
+    /* Responsive: móviles */
+    @media (max-width: 1400px){
+      .sk-ww-instagram-reels .sk-profile::before{
+        width: var(--iglogo, 130px);
+        height: var(--iglogo, 130px);
+        flex: 0 0 var(--iglogo, 130px);
+        visibility: hidden;
+      }
+      .sk-ww-instagram-reels .sk-profile::after {
+        width: var(--iglogo, 130px);
+        height: var(--iglogo, 130px);
+        flex: 0 0 var(--iglogo, 130px);
+        visibility: hidden;
+      }
+    }
+    @media (max-width: 1200px){
+      .sk-ww-instagram-reels .sk-profile::before{
+        width: var(--iglogo, 70px);
+        height: var(--iglogo, 70px);
+        flex: 0 0 var(--iglogo, 70px);
+        visibility: hidden;
+      }
+      .sk-ww-instagram-reels .sk-profile::after {
+        width: var(--iglogo, 70px);
+        height: var(--iglogo, 70px);
+        flex: 0 0 var(--iglogo, 70px);
+        visibility: hidden;
+      }
+    }
+    @media (max-width: 991px){
+      .sk-profile__details::after {
+        display: none !important;
+      }
+      .sk-ww-instagram-reels .sk-profile::before{
+        display: none !important;
+      }
+      .sk-ww-instagram-reels .sk-profile::after {
+        display: none !important;
+      }
+    }
+    @media (max-width: 768px){
+      .sk-profile__details::after {
+        display: none !important;
+      }
+    }
+    @media (max-width: 600px){
+      .sk-posts-container.sk-grid{
+        grid-template-columns: 1fr !important;
+        grid-auto-rows: 260px !important;
+      }
+    }
+    /* ===== Fin SECCIÓN 4 ===== */
+
+    /* ===== SECCIÓN 4.5: Recap del Mes ===== */
+    #section4-5 {
+      min-height: 100vh;
+      background-color: #FF3838;
+      background-image: url("https://storage.googleapis.com/msgsndr/48hz6AHqaU6NMstFnHTl/media/68e2979c5bb80654aad37ec1.png");
+      background-repeat: no-repeat;
+      background-position: left bottom;
+      background-size: 60% auto;
+      color: #fff;
+      padding: 80px 20px 40px;
+      text-align: center;
+    }
+
+    .recap-heading { margin-bottom: 30px; }
+    
+    .recap-heading .line1 {
+      font-weight: 300;
+      font-size: clamp(1.1rem, 2vw, 1.6rem);
+      margin: 0;
+      padding: 0;
+    }
+
+    .recap-heading .line2 {
+      font-weight: 900;
+      font-size: clamp(1.3rem, 2.6vw, 2rem);
+      margin: 0;
+      padding: 0;
+    }
+
+    .recap-gallery {
+      display: grid;
+      grid-template-columns: 2fr 3fr 2fr;
+      gap: 10px;
+      width: min(88vw, 1100px);
+      height: 75vh;
+      max-height: 500px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+      overflow: hidden;
+      margin: auto;
+      border: 8px solid #fff; /* borde blanco alrededor */
+    }
+
+    .recap-item img,
+    .recap-grid img,
+    .recap-item video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      cursor: pointer;
+      border: none;
+      transition: transform 0.3s ease;
+    }
+
+    .recap-item img:hover,
+    .recap-grid img:hover,
+    .recap-item video:hover {
+      transform: scale(1.02);
+    }
+
+    .recap-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 6px;
+    }
+
+    .recap-item.video {
+      position: relative;
+    }
+
+    .fullscreen-btn {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      background: rgba(255,56,56,0.9);
+      border: none;
+      border-radius: 50%;
+      color: white;
+      width: 36px;
+      height: 36px;
+      cursor: pointer;
+    }
+
+    /* Modal de zoom */
+    .media-modal {
+      display: none;
+      position: fixed;
+      z-index: 2000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.9);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .media-modal img,
+    .media-modal video {
+      max-width: 90%;
+      max-height: 90%;
+      object-fit: contain; /* mantiene el ratio original */
+      display: block;
+    }
+
+    .media-modal .close {
+      position: absolute;
+      top: 20px;
+      right: 35px;
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    /* Botón de Play superpuesto en el video */
+    .play-overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      background: rgba(0,0,0,0.25);
+      transition: background 0.3s ease;
+    }
+
+    .play-overlay:hover {
+      background: rgba(0,0,0,0.4);
+    }
+
+    .play-icon {
+      width: 68px;
+      height: 68px;
+      background: rgba(255,255,255,0.85);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .play-icon::before {
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      border-left: 20px solid #FF3838; /* triángulo rojo */
+      border-top: 12px solid transparent;
+      border-bottom: 12px solid transparent;
+      margin-left: 4px;
+    }
+
+    .play-overlay:hover .play-icon {
+      transform: scale(1.1);
+      background: #fff;
+    }
+
+    /* Al reproducir, oculta el botón */
+    .play-overlay.hidden {
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.4s ease;
+    }
+
+    /* ====== Diseño responsive ====== */
+    @media (max-width: 768px) {
+      .recap-gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        width: 90vw;
+        height: auto;
+        max-height: 80vh;
+        gap: 10px;
+        border: 6px solid #fff;
+        overflow-y: auto; /* scroll vertical */
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch; /* scroll fluido en iOS */
+      }
+      /* Estilo sutil para la barra de desplazamiento en móvil */
+      .recap-gallery::-webkit-scrollbar {
+        width: 6px;
+      }
+      .recap-gallery::-webkit-scrollbar-thumb {
+        background: rgba(0,0,0,0.3);
+        border-radius: 3px;
+      }
+      .recap-gallery::-webkit-scrollbar-thumb:hover {
+        background: rgba(0,0,0,0.45);
+      }
+
+      /* Imagen grande primera fila */
+      .recap-item.large img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+      }
+
+      /* Secciones de 2 imágenes por fila */
+      .recap-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+        gap: 8px;
+      }
+
+      .recap-grid img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+      }
+
+      /* Video ocupa todo el ancho (última fila) */
+      .recap-item.video {
+        grid-column: 1 / -1;
+      }
+
+      .recap-item.video video {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+      }
+
+      .fullscreen-btn {
+        bottom: 14px;
+        right: 14px;
+        width: 40px;
+        height: 40px;
+      }
+    }
+    /* ===== Fin SECCIÓN 4.5 ===== */
+
+    /* ===== SECCIÓN 5: formulario + footer ===== */
+    #section5{min-height:100vh;background:#f7f7f7;display:flex;flex-direction:column;padding-top:110px;padding-bottom:50px;}
+    .lead-wrap{width:min(1100px,92vw);margin:0 auto;}
+    .lead-title{color:#d83e3e;text-align:center;font-weight:900;font-size:clamp(2rem,4vw,3rem);margin-bottom:22px;}
+
+    .form-card{
+      background: #fff;
+      border-radius: 25px;
+      border: 10px solid #f05959;
+      box-shadow: 0 14px 36px rgba(0,0,0,.12);
+      overflow: hidden;
+      width: 100%;
+    }
+    .form-card iframe{
+      display: block;
+      width: 100%;
+      height: 600px;
+      border: 0;
+      margin: 0;
+    }
+
+    .form-text-wrapper {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 2rem;
+      align-items: center;
+      min-height: 70vh;
+    }
+
+    .form-note {
+      font-size: 1.1em;
+      line-height: 1.6;
+      color: #444;
+      align-self: center;
+    }
+
+    .site-footer{
+        margin-top:36px;
+        background: linear-gradient(90deg, #FF3838, #FE6A6A);
+        color:#fff;
+    }
+
+    .footer-logos img {
+      height: 100px;
+      width: auto;
+      object-fit: contain;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 24px;
+      background: none;
+      box-shadow: none;
+      border-radius: 0;
+      border: none;
+      transition: transform 0.2s;
+      padding-top: 2%;
+      padding-bottom: 2%;
+    }
+    .footer-logos img:hover {
+      transform: scale(1.1);
+    }
+
+    .footer-inner{
+        width: min(1200px, 92vw);
+        margin: 0 auto;
+        padding: 28px 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        grid-template-areas:
+            "tittle"
+            "marcas"
+            "text"
+            "social";
+        gap: 22px;
+    }
+
+    .footer-tittle{ grid-area: tittle; display: flex; align-items: center; justify-content: center; color:#fff; font-weight: bold; }
+
+    .footer-up{ grid-area: marcas; display: flex; gap:18px; align-items: center; justify-content: center; }
+    .footer-up a{ color:#fff; }
+    .footer-up a:hover{ opacity:.85; }
+    .footer-up img { animation: blink 1s infinite; }
+
+    .footer-middle{ grid-area: text; display: flex; align-items: center; justify-content: center; color:#fff; font-size: 0.8rem; }
+
+    .footer-bottom{ grid-area: social; display: flex; gap:18px; align-items: center; justify-content: center; }
+    .footer-bottom a{ color:#fff; }
+    .footer-bottom a:hover{ opacity:.85; }
+
+    /* Animación blink de Logos */
+    @keyframes blink {
+      0%, 80% {
+          opacity: 1;
+          filter: none; 
+      }
+      85% {
+          opacity: 1;
+          filter: drop-shadow(0 0 6px white) brightness(1.5);
+      }
+      90% {
+          opacity: 1;
+          filter: drop-shadow(0 0 12px white) brightness(2);
+      }
+      95% {
+          opacity: 1;
+          filter: drop-shadow(0 0 6px white) brightness(1.5);
+      }
+      100% {
+          opacity: 1;
+          filter: none;
+      }
+    }
+
+    @media (max-width: 992px) {
+      .form-text-wrapper {
+        grid-template-columns: 1fr;
+      }
+      .form-note {
+        margin-top: 20px;
+      }
+    }
+    
+    /* RESPONSIVE */
+    @media (max-width: 768px){
+      .site-footer {
+        padding: 40px 10px;
+        background: linear-gradient(180deg, #FF3838, #FE6A6A);
+      }
+      .footer-inner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 16px;
+      }
+      .footer-tittle h2 {
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+      }
+
+      .footer-up {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+      }
+
+      .footer-logos img {
+        height: 60px;
+        width: auto;
+        margin: 6px 8px;
+        padding: 0;
+      }
+      .footer-bottom {
+        margin-top: 12px;
+        gap: 14px;
+      }
+      .footer-bottom a i {
+        font-size: 1.6rem;
+      }
+      .footer-middle {
+        visibility: visible !important;
+        font-size: 0.75rem;
+        line-height: 1.4;
+        text-align: center;
+        padding: 0 !important;
+        max-width: 90%;
+        margin: 10px auto 0;
+      }
+      .footer-left { justify-content: center; }
+      .lead-title { display: none;}
+      .form-card { max-height: 95vh; margin-top: -5%; }
+      .form-card iframe { margin-top: -10%; }
+      .form-note {
+        font-size: 0.8em;
+        margin-top: 5px;
+        text-align: center;
+      }
+    }
+    /* ===== Fin SECCIÓN 5 ===== */
+
+    /* ===== MODAL VENTA ===== */
+    .modal-content {
+      box-shadow: 0 14px 36px rgba(0,0,0,.25);
+      animation: fadeInUp .3s ease;
+    }
+    @keyframes fadeInUp {
+      from { transform: translateY(20px); opacity:0; }
+      to { transform: translateY(0); opacity:1; }
+    }
+    .modal-dialog {
+      max-width: 720px;
+      margin: auto;
+    }
+
+    /* ===== BOTON DE WHATSAPP ===== */
+    .whatsapp-float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: #fff;
+      border-radius: 50%;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      transition: background 0.3s;
+      animation: golden-glow 2s infinite;
+      /*border: 3px solid gold;*/           /* <--- Borde dorado */
+      box-shadow:
+        0 0 0 6px rgba(255,215,0,0.25), /* Glow dorado suave */
+        2px 2px 10px rgba(0,0,0,0.2);
+    }
+
+    @keyframes golden-glow {
+      0% {
+        box-shadow:
+          0 0 0 6px rgba(255,215,0,0.25),
+          2px 2px 10px rgba(0,0,0,0.2);
+      }
+      50% {
+        box-shadow:
+          0 0 16px 8px rgba(255,215,0,0.5),
+          2px 2px 10px rgba(0,0,0,0.2);
+      }
+      100% {
+        box-shadow:
+          0 0 0 6px rgba(255,215,0,0.25),
+          2px 2px 10px rgba(0,0,0,0.2);
+      }
+    }
+
+    .whatsapp-float:hover {
+      background: #1ebea5;
+    }
+
+    .whatsapp-float img {
+      width: 32px;
+      height: 32px;
+    }
+
+    /* ===== BOTON MODALES DEL HOME ===== */
+    
+    /* Botón credit score: esquina inferior izquierda */
+    .credit-score-box {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      background: linear-gradient(to bottom, #FF3838, #FE6A6A);
+      color: #fff;
+      padding: 16px 16px 20px;
+      border-radius: 12px;
+      width: 220px;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1.4;
+      box-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+      z-index: 1100;
+      transition: width 0.4s ease, font-size 0.4s ease;
+    }
+    .credit-score-box:hover {
+      width: 250px;
+      font-size: 18px;
+    }
+
+    .credit-score-box:hover button {
+      transform: scale(1.02);
+      font-size: 16px;
+    }
+
+    .credit-score-box button {
+      margin-top: 10px;
+      display: inline-block;
+      width: 100%;
+      padding: 8px 10px;
+      background: #fff;
+      color: #FF3838;
+      font-weight: bold;
+      font-size: 12px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: transform 0.3s ease, background 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    .credit-score-box button:hover {
+      background: #fc7a7a;
+      color: #fff;
+    }
+
+    /* Botón cerrar (X) */
+    .credit-score-box .close-btn {
+      animation: blink 1s infinite;
+      position: absolute;
+      top: 6px;
+      right: 10px;
+      background: transparent;
+      border: none;
+      color: #fff;
+      font-size: 18px;
+      cursor: pointer;
+      line-height: 1;
+    }
+
+    /* Botón descargar app: centro inferior */
+    /* === Botón Descarga APP (inferior centro) === */
+    .app-download-box {
+      position: absolute;
+      bottom: 70px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      background: transparent;
+      z-index: 3;
+      text-align: left;
+    }
+
+    .app-download-box img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      box-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+    }
+
+    .app-download-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: #fff;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+    }
+
+    .app-download-content strong {
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .app-download-content .btn-app {
+      margin-top: 3px;
+      background: #fff;
+      color: #FF3838;
+      font-weight: bold;
+      font-size: 12px;
+      border: none;
+      border-radius: 25px;
+      padding: 4px 6px !important;
+      cursor: pointer;
+      transition: background 0.3s ease, width 0.4s ease, font-size 0.4s ease;
+      box-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+    }
+    .app-download-content .btn-app:hover {
+      background: #fc7a7a;
+      color: #fff;
+      transform: scale(1.02);
+      font-size: 16px;
+    }
+
+    @media (max-width: 768px){
+        /*.app-download-box{ display:none; visibility: hidden; }
+        .credit-score-box{ display:none; visibility: hidden; }*/
+        .app-download-box{
+          position: absolute;
+          bottom: 150px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: auto;
+          z-index: 9;
+        }
+        .credit-score-box{ 
+          position: fixed;
+          top: 80px;
+          left: 53%;
+          transform: translateX(-50%);
+          width: 220px;
+          max-height: 110px !important;
+         }
+    }
+
+    section, .hero-section, .communities-section {
+      width: 100vw !important;
+      margin: 0 auto !important;
+      overflow-x: hidden !important;
+      box-sizing: border-box;
+    }
+
+    .container, .container-fluid, .lead-wrap {
+      max-width: 100% !important;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+      margin: 0 auto !important;
+    }
+
+    /* Corrige imágenes o videos que sobresalen */
+    img, video, iframe {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* Ajuste especial para sección 1 (video hero) */
+    #section1 {
+      width: 100vw;
+      overflow: hidden;
+    }
+
+    /* Ajuste especial para comunidades (sección 3) */
+    .communities-wrap {
+      width: 100vw !important;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+    }
+
+    /* ===== Scroll Cue en móviles ===== */
+    .scroll-cue {
+      position: absolute;
+      left: 50%;
+      bottom: 30px;
+      transform: translateX(-50%);
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      border: 2px solid rgba(255, 255, 255, 0.9);
+      background: rgba(0, 0, 0, 0.35);
+      color: #fff;
+      display: none;           /* Oculto por defecto */
+      align-items: center;
+      justify-content: center;
+      z-index: 10;
+      animation: cue-bounce 2s ease-in-out infinite;
+    }
+
+    .scroll-cue svg {
+      width: 22px;
+      height: 22px;
+    }
+
+    @keyframes cue-bounce {
+      0%, 100% { transform: translateX(-50%) translateY(0); }
+      50% { transform: translateX(-50%) translateY(6px); }
+    }
+
+    @media (max-width: 768px) {
+      .scroll-cue { display: flex; }  /* Solo en móvil */
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WK5TQSM" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+    <div class="container-fluid px-3">
+      <a class="navbar-brand" href="#section1">
+        <img src="https://storage.googleapis.com/msgsndr/48hz6AHqaU6NMstFnHTl/media/68964398f0447309286391ef.png" alt="ARR" style="height:60px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#section1">INICIO</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">CONÓCENOS</a>
+            <ul class="dropdown-menu dropdown-menu-light dropdown-transparente">
+              <!--<li><a class="dropdown-item" href="#section4">Nuestras Redes</a></li>-->
+              <li><a class="dropdown-item" href="#section4-5">Así Cerramos el Mes</a></li>
+              <li><a class="dropdown-item" href="https://adrianareyesrealty.com/about-us">Quiénes Somos</a></li>
+              <li><a class="dropdown-item" href="https://adrianareyesrealty.com/about-us#section2">Nuestros Realtors</a></li>
+              <li><a class="dropdown-item" href="https://adrianareyesrealty.com/about-us#section3">Qué opinan Nuestros Clientes</a></li>
+              <li><a class="dropdown-item" href="https://adrianareyesrealty.com/about-us#section4">Nuestro Equipo</a></li>
+              <li><a class="dropdown-item" href="https://adrianareyesrealty.com/unete" style="background-color: #f85656;">¡Únete a Nuestro Equipo!</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">SERVICIOS</a>
+            <ul class="dropdown-menu dropdown-menu-light dropdown-transparente">
+              <li><a class="dropdown-item" href="#section3">Comunidades Destacadas</a></li>
+              <li><a class="dropdown-item" href="https://adrianareyesrealty.idxbroker.com/i/arr-map-search" target="_blank" rel="noopener noreferrer">Mapa de Búsqueda</a></li>
+              <li><a class="dropdown-item" href="#section3-5" rel="noopener noreferrer">¿Cuánto vale mi casa?</a></li>
+              <li><a class="dropdown-item" href="https://www.eventbrite.com/cc/open-house-4630833" target="_blank" style="background-color: #f85656;">Eventos Open House</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">CONTÁCTANOS</a>
+            <ul class="dropdown-menu dropdown-menu-light dropdown-transparente">
+              <li><a class="dropdown-item" href="#section5">Formulario de Contacto</a></li>
+              <li><a class="dropdown-item" href="https://adrianareyesrealty.com/unete">¡Únete a Nuestro Equipo!</a></li>
+              <li><a class="dropdown-item" href="https://wa.me/13364104474?text=Hola%2C%20deseo%20informaci%C3%B3n%20de%20sus%20servicios%20de%20Real%20State..." target="_blank" rel="noopener noreferrer" style="background-color: #5AD16A;">WhatsApp</a></li>
+            </ul>
+          </li>
+          <!--<li class="nav-item"><a class="nav-link" href="#section5">CONTÁCTANOS</a></li>-->
+          <!-- Bandera Inglés -->
+          <li class="nav-item">
+            <a class="nav-link d-flex align-items-center" href="https://adrianareyesrealty.com/en">
+              <img src="https://flagcdn.com/w20/us.png" 
+                  alt="English" style="height:17px; width:auto;" class="flag-icon">
+              <span style="margin-left:6px;">EN</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- SECCIÓN 1: Home Video -->
+  <section id="section1" class="hero-section">
+    <video autoplay muted loop playsinline id="heroVideo">
+      <source src="https://storage.googleapis.com/msgsndr/48hz6AHqaU6NMstFnHTl/media/68963bd96493723a24d11fa1.mp4" type="video/mp4">
+      Tu navegador no soporta video en HTML5.
+    </video>
+    <!-- Imagen Your New Home -->
+    <div class="imagen-fija">
+      <img src="https://storage.googleapis.com/msgsndr/48hz6AHqaU6NMstFnHTl/media/68f52bb56b77942e263057fe.png" alt="Adriana Reyes Realty" class="imagen-fija">
+    </div>
+
+    <div class="botones">
+      <a href="https://adrianareyesrealty.idxbroker.com/i/arr-map-search" target="_blank">COMPRA</a>
+      <button data-bs-toggle="modal" data-bs-target="#modalVenta">VENTA</button>
+      <a href="https://adrianareyesrealty.idxbroker.com/i/arr-map-search-rent" target="_blank">RENTA</a>
+      <a href="https://integritymtgs.com/loan-officers/adriana-reyes/" target="_blank">PRÉSTAMOS</a>
+    </div>
+
+    <!-- Dropdown SOLO visible en móvil -->
+    <div class="botones-dropdown">
+      <div class="dropdown">
+        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          NUESTROS SERVICIOS
+        </button>
+        <ul class="dropdown-menu dropdown-menu-light dropdown-transparente">
+          <li><a class="dropdown-item" href="https://adrianareyesrealty.idxbroker.com/i/arr-map-search" target="_blank">COMPRA</a></li>
+          <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalVenta">VENTA</a></li>
+          <li><a class="dropdown-item" href="https://adrianareyesrealty.idxbroker.com/i/arr-map-search-rent" target="_blank">RENTA</a></li>
+          <li><a class="dropdown-item" href="https://integritymtgs.com/loan-officers/adriana-reyes/" target="_blank">PRÉSTAMOS</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <button class="scroll-cue" id="cueDown" aria-label="Ir a la siguiente sección" title="Ver más">
+      <!-- Chevron down en SVG, sin dependencias -->
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M6 9l6 6 6-6"/>
+      </svg>
+    </button>
+
+    <!-- Botón Credit Score -->
+    <div class="credit-score-box" id="creditScoreBox">
+      <span class="close-btn" onclick="document.getElementById('creditScoreBox').style.display='none'">&times;</span>
+      ¿Quieres mejorar tu<br> credit score?
+      <button data-bs-toggle="modal" data-bs-target="#modalCredito">DESCUBRELO AHORA</button>
+    </div>
+
+    <!-- Botón Descargar la App -->
+    <div class="app-download-box">
+      <img src="https://storage.googleapis.com/msgsndr/48hz6AHqaU6NMstFnHTl/media/68d6a8546fe1a5a7fc6cc699.png" alt="App Logo">
+      <div class="app-download-content">
+        <strong>DESCARGA LA APP</strong>
+        <button class="btn-app" onclick="window.open('https://mls-client.com/8ABB7054','_blank')">LA QUIERO</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN 2: Home -->
+  <section id="section2">
+    <div class="container">
+      <div class="section2-content">
+        <h1>DESCUBRE TU HOGAR</h1>
+        <p style="font-size: 1.8em; font-weight: 500;">
+          En Adriana Reyes Realty, guiamos a compradores y vendedores a través de cada paso del proceso inmobiliario con honestidad, claridad y cuidado.<br><br>
+          Nuestra misión es servir a la comunidad con apoyo personalizado y resultados reales en los que pueda confiar.
+        </p>
+        <div class="cta-wrap">
+          <button id="btnContacto" class="btn btn-cta">Contáctanos</button>
+        </div>
+      </div>
+    </div>
+    <!-- Imagen de Adriana -->
+    <img src="https://storage.googleapis.com/msgsndr/48hz6AHqaU6NMstFnHTl/media/6855a13dac94584e44af0bc0.png" alt="Adriana Reyes" class="adriana-img">
+    <!-- Frase Adriana -->
+    <img src="https://storage.googleapis.com/msgsndr/48hz6AHqaU6NMstFnHTl/media/68c2e05f4bcc519255f244fc.png" alt="Decorativo" class="frase-img">
+  </section>
+  
+  <!-- SECCIÓN 3: MLS (Featured Communities) -->
+  <section id="section3" class="communities-section">
+    <div class="communities-wrap">
+      <!-- Columna izquierda: título + botón -->
+      <div class="communities-left">
+        <h2 class="communities-heading">
+          <span class="bold">FEATURED</span>
+          <span class="thin">COMMUNITIES</span>
+        </h2>
+        <a class="btn-view-all big" href="https://adrianareyesrealty.idxbroker.com/idx/results/listings?per=12" target="_blank" rel="noopener">Ver Todo</a>
+      </div>
+
+      <!-- Columna derecha: 6 ciudades -->
+      <div class="communities-grid">
+
+        <!-- 1 -->
+        <a class="comm-card" href="https://adrianareyesrealty.idxbroker.com/idx/results/listings?city%5B%5D=52300&ccz=city&srt=prd" target="_blank" rel="noopener" aria-label="Winston-Salem, North Carolina">
+          <span class="comm-bg" style="background-image:url('https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&w=1600');"></span>
+          <span class="comm-overlay"></span>
+          <span class="comm-title">
+            <strong>WINSTON<br>SALEM</strong>
+            <em>NORTH CAROLINA</em>
+          </span>
+        </a>
+
+        <!-- 2 -->
+        <a class="comm-card" href="https://adrianareyesrealty.idxbroker.com/idx/results/listings?city%5B%5D=21123&ccz=city&srt=prd" target="_blank" rel="noopener" aria-label="High Point, North Carolina">
+          <span class="comm-bg" style="background-image:url('https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=1600');"></span>
+          <span class="comm-overlay"></span>
+          <span class="comm-title">
+            <strong>HIGH POINT</strong>
+            <em>NORTH CAROLINA</em>
+          </span>
+        </a>
+        
+        <!-- 3 -->
+        <a class="comm-card" href="https://adrianareyesrealty.idxbroker.com/idx/results/listings?idxID=c258&ccz=city&lp=100000&hp=1500000&pt=1&per=25&srt=prd&city%5B%5D=13830" target="_blank" rel="noopener" aria-label="Eden, North Carolina">
+          <span class="comm-bg" style="background-image:url('https://images.unsplash.com/photo-1505691938895-1758d7feb511?q=80&w=1600&auto=format&fit=crop');"></span>
+          <span class="comm-overlay"></span>
+          <span class="comm-title">
+            <strong>EDEN</strong>
+            <em>NORTH CAROLINA</em>
+          </span>
+        </a>
+
+        <!-- 4 -->
+        <a class="comm-card" href="https://adrianareyesrealty.idxbroker.com/idx/results/listings?city%5B%5D=46229&ccz=city&srt=prd" target="_blank" rel="noopener" aria-label="Thomasville, North Carolina">
+          <span class="comm-bg" style="background-image:url('https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=1600&auto=format&fit=crop');"></span>
+          <span class="comm-overlay"></span>
+          <span class="comm-title">
+            <strong>THOMASVILLE</strong>
+            <em>NORTH CAROLINA</em>
+          </span>
+        </a>
+
+        <!-- 5 -->
+        <a class="comm-card" href="https://adrianareyesrealty.idxbroker.com/idx/results/listings?city%5B%5D=1774&ccz=city&srt=prd" target="_blank" rel="noopener" aria-label="Asheboro, North Carolina">
+          <span class="comm-bg" style="background-image:url('https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1600&auto=format&fit=crop');"></span>
+          <span class="comm-overlay"></span>
+          <span class="comm-title">
+            <strong>ASHEBORO</strong>
+            <em>NORTH CAROLINA</em>
+          </span>
+        </a>
+
+        <!-- 6 -->
+        <a class="comm-card" href="https://adrianareyesrealty.idxbroker.com/idx/results/listings?city%5B%5D=19140&ccz=city&srt=prd" target="_blank" rel="noopener" aria-label="Greensboro, North Carolina">
+          <span class="comm-bg" style="background-image:url('https://images.unsplash.com/photo-1523217582562-09d0def993a6?q=80&w=1600&auto=format&fit=crop');"></span>
+          <span class="comm-overlay"></span>
+          <span class="comm-title">
+            <strong>GREENSBORO</strong>
+            <em>NORTH CAROLINA</em>
+          </span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN 3.5: Descubre el valor de tu hogar -->
+  <section id="section3-5" class="home-value-section">
+    <!-- Imagen de título -->
+    <img 
+      src="https://storage.googleapis.com/msgsndr/48hz6AHqaU6NMstFnHTl/media/68e3cf5d8c92697402af3bce.png" 
+      alt="Discover Your Home True Value" 
+      class="title-image">
+
+    <!-- Botones circulares -->
+    <div class="circle-buttons">
+      <!-- Botón 1: Home Value -->
+      <div class="circle-btn" id="openModal">
+        <img 
+          src="https://storage.googleapis.com/msgsndr/48hz6AHqaU6NMstFnHTl/media/6952b8cfe889d31221e2d8d7.png" 
+          alt="Home Value Button">
+      </div>
+
+      <!-- Botón 2: Mortgage -->
+      <div class="circle-btn" id="openMortgageModal" aria-label="Abrir portal de mortgage">
+        <img 
+          src="https://storage.googleapis.com/msgsndr/48hz6AHqaU6NMstFnHTl/media/6952b7f8ee104746c231d5ec.png" 
+          alt="Mortgage Button">
+      </div>
+    </div>
+
+    <!-- Texto inferior -->
+    <p class="home-value-text">
+      Obtenga un análisis gratuito de expertos sobre el valor de su vivienda <br> o utilice nuestra calculadora de hipotecas para planificar su próxima compra con confianza.
+    </p>
+
+    <!-- Modal -->
+    <div class="modal-overlay" id="descubreModal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span>Home Valuation Form</span>
+          <button class="close-modal" id="closeModal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <iframe src="https://adrianareyesrealty.idxbroker.com/idx/homevaluation" title="Home Valuation Form"></iframe>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Modal Mortgage -->
+    <div class="modal-overlay" id="mortgageModal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span>Mortgage</span>
+          <button class="close-modal" id="closeMortgageModal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <iframe src="https://adrianareyesrealty.idxbroker.com/idx/mortgage" title="Mortgage"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN 4: INSTAGRAM -->
+  <!--<section id="section4" >
+    <div class="container text-center">
+      <h2 class="section-title mb-4" style="color: #fff;">Últimos en Instagram</h2>
+      <div class='sk-ww-instagram-reels' data-embed-id='25593674'></div><script src='https://widgets.sociablekit.com/instagram-reels/widget.js' defer></script>
+    </div>
+  </section>-->
+
+  <!-- SECCIÓN 4.5: RECAP DEL MES -->
+  <section id="section4-5">
+    <div class="container text-center">
+      <div class="recap-heading">
+        <span class="line1">Así cerramos el mes en</span>
+        <span class="line2">Adriana Reyes Realty</span>
+      </div>
+
+      <div class="recap-gallery">
+        <!-- Imagen grande izquierda -->
+        <div class="recap-item large">
+          <img src="https://res.cloudinary.com/dqjhdtatd/image/upload/v1762794670/recap_centro4_bbhnsa.png" alt="Recap Imagen Principal" onclick="openMedia(this.src)">
+        </div>
+
+        <!-- Galería intermedia (6 imágenes) -->
+        <div class="recap-grid">
+          <img src="https://res.cloudinary.com/dqjhdtatd/image/upload/v1762794670/recap_centro3_eqphmd.png" onclick="openMedia(this.src)">
+          <img src="https://res.cloudinary.com/dqjhdtatd/image/upload/v1762794670/imagen3_1_pkafj2.png" onclick="openMedia(this.src)">
+          <img src="https://res.cloudinary.com/dqjhdtatd/image/upload/v1762794671/recap_centro2_mutjwd.png" onclick="openMedia(this.src)">
+          <img src="https://res.cloudinary.com/dqjhdtatd/image/upload/v1762794671/recap_centro5_mnxmtp.png" onclick="openMedia(this.src)">
+          <img src="https://res.cloudinary.com/dqjhdtatd/image/upload/v1762794670/imagen4_1_gpzks8.png" onclick="openMedia(this.src)">
+          <img src="https://res.cloudinary.com/dqjhdtatd/image/upload/v1762794670/recap_centro1_lhs5wm.png" onclick="openMedia(this.src)">
+        </div>
+
+        <!-- Video a la derecha -->
+        <div class="recap-item video">
+          <video id="recapVideo" poster="https://res.cloudinary.com/dqjhdtatd/image/upload/v1762797459/2_pvhbzs.jpg"
+            preload="none" onclick="toggleVideo()">
+            <source src="https://res.cloudinary.com/dqjhdtatd/video/upload/v1762794675/video-recap-arr_iaunxr.mp4" type="video/mp4">
+            Tu navegador no soporta video HTML5.
+          </video>
+
+          <!-- Botón de Play -->
+          <div id="playOverlay" class="play-overlay" onclick="toggleVideo()">
+            <div class="play-icon"></div>
+          </div>
+
+          <button class="fullscreen-btn" onclick="openMedia('https://res.cloudinary.com/dqjhdtatd/video/upload/v1762794675/video-recap-arr_iaunxr.mp4')">
+            <i class="fa fa-expand"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal para zoom de Recap -->
+  <div id="mediaModal" class="media-modal" onclick="closeMedia()">
+    <span class="close">&times;</span>
+    <img id="modalImg" alt="">
+    <video id="modalVideo" controls></video>
+  </div>
+  <!-- FIN SECCIÓN 4.5 -->
+
+  <!-- SECCIÓN 5: Form + Footer -->
+  <section id="section5" aria-label="Agenda tu consulta">
+    <div class="lead-wrap">
+      <h2 class="lead-title">¡Agenda tu consulta gratuita ahora!</h2>
+
+      <div class="form-text-wrapper">
+        <!-- Bloque del formulario -->
+        <div class="form-card">
+          <iframe
+            src="https://api.leadconnectorhq.com/widget/form/k4tALviKNlXYRV1l4PNv"
+            id="inline-k4tALviKNlXYRV1l4PNv"
+            data-layout="{'id':'INLINE'}"
+            data-trigger-type="alwaysShow"
+            data-activation-type="alwaysActivated"
+            data-deactivation-type="neverDeactivate"
+            data-form-name="Formulario Web ARR"
+            data-height="587"
+            data-layout-iframe-id="inline-k4tALviKNlXYRV1l4PNv"
+            data-form-id="k4tALviKNlXYRV1l4PNv"
+            title="Formulario Web ARR">
+          </iframe>
+          <script src="https://link.msgsndr.com/js/form_embed.js"></script>
+        </div>
+
+        <!-- Bloque del texto -->
+        <div class="form-note">
+          <p>
+            Al registrarte te enviaremos al correo la información correspondiente a tu solicitud 
+            (<strong>Compra, Venta, Renta o Inversión</strong>).<br><br>
+            Asegúrate que el correo registrado <strong>sea válido</strong> para que recibas la información.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer" id="section6">
+      <div class="footer-inner">
+        <div class="footer-tittle">
+          <h2>Conoce nuestras marcas:</h2>
+        </div>
+
+        <div class="footer-up footer-logos">
+          <a href="https://www.adrianareyesgroup.com" target="_blank" title="Adriana Reyes Group">
+            <img src="https://storage.googleapis.com/msgsndr/48hz6AHqaU6NMstFnHTl/media/68a7423dd9ba65ad5882b20e.png" alt="Adriana Reyes Group">
+          </a>
+          <a href="https://www.adrianareyesrealty.com" target="_blank" title="Adriana Reyes Realty">
+            <img src="https://storage.googleapis.com/msgsndr/48hz6AHqaU6NMstFnHTl/media/68a7423d5727bdd785970f9e.png" alt="Adriana Reyes Realty">
+          </a>
+          <a href="https://www.reyesfinancialagency.com/construction-page" target="_blank" title="Reyes Financial Agency">
+            <img src="https://storage.googleapis.com/msgsndr/48hz6AHqaU6NMstFnHTl/media/68a7423de2fbdda1bc3dc7f2.png" alt="Reyes Financial Agency">
+          </a>
+          <a href="https://www.latillionaires.com" target="_blank" title="Latillionaires">
+            <img src="https://storage.googleapis.com/msgsndr/48hz6AHqaU6NMstFnHTl/media/68a7423d5f326c5ec2d6969b.png" alt="Latillionaires">
+          </a>
+        </div>
+
+        <div class="footer-middle">
+          Adriana Reyes Realty, 2125 Eastchester Dr. Suite 105, High Point, NC, United States 27265, Phone: (336) 410-4474
+        </div>
+
+        <div class="footer-bottom">
+          <a href="https://www.facebook.com/AdrianaReyesRealty" target="_blank" aria-label="Facebook"><i class="fab fa-facebook fa-2x"></i></a>
+          <a href="https://www.instagram.com/adrianareyesrealtor" target="_blank" aria-label="Instagram"><i class="fab fa-instagram fa-2x"></i></a>
+          <a href="https://www.tiktok.com/@adrianareyesrealtor" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok fa-2x"></i></a>
+          <a href="https://www.linkedin.com/company/adriana-reyes-realtor" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+      </div>
+    </footer>
+
+  </section>
+
+  <!-- Modal Venta -->
+  <div class="modal fade" id="modalVenta" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content" style="border-radius:20px; overflow:hidden; max-width:700px; margin:auto;">
+        <div class="modal-header" style="background:linear-gradient(90deg,#FF3838,#FE6A6A); color:white;">
+          <h5 class="modal-title">Formulario de Venta</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body p-0" style="background:#f7f7f7;">
+          <iframe 
+            src="https://api.leadconnectorhq.com/widget/form/F3ktMPredfAuBPD9VF1d" 
+            style="width:100%; height:80vh; border:0;" 
+            title="Formulario Venta">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Crédito -->
+  <div class="modal fade" id="modalCredito" tabindex="-1" aria-hidden="true" style="z-index: 1199;">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content" style="border-radius:20px; overflow:hidden; max-width:700px; margin:auto;">
+        <div class="modal-header" style="background:linear-gradient(90deg,#FF3838,#FE6A6A); color:white;">
+          <h5 class="modal-title">Credit Form</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body p-0" style="background:#f7f7f7; z-index: 1200;">
+          <iframe 
+            src="https://api.leadconnectorhq.com/widget/form/RXMQyXaiF8samzYxymLH" 
+            style="width:100%; height:80vh; border:0;" 
+            title="Formulario Credito">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Unirme -->
+  <div class="modal fade" id="modalUnirme" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content" style="border-radius:20px; overflow:hidden; max-width:700px; margin:auto;">
+        <div class="modal-header" style="background:linear-gradient(90deg,#FF3838,#FE6A6A); color:white;">
+          <h5 class="modal-title">Formulario de Venta</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body p-0" style="background:#f7f7f7;">
+          <iframe 
+            src="https://api.leadconnectorhq.com/widget/form/F3ktMPredfAuBPD9VF1d" 
+            style="width:100%; height:80vh; border:0;" 
+            title="Formulario Venta">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a href="https://wa.me/13364104474?text=Hola%2C%20deseo%20informaci%C3%B3n%20de%20sus%20servicios%20de%20Real%20State..."
+    class="whatsapp-float" 
+    target="_blank" 
+    title="¡Contáctanos por WhatsApp!">
+    <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/FFFFFF/whatsapp--v1.png" alt="whatsapp--v1"/>
+  </a>
+
+  <!-- Navegación por scroll y flechas -->
+  <script>
+    (function(){
+      const ids = ["section1","section2","section3","section3-5","section4","section4-5","section5","section6"];
+      const secs = ids.map(id => document.getElementById(id));
+      let lock = false;
+      const lockTime = 650;
+
+      function idxActual(){
+        const y = window.scrollY + window.innerHeight/2;
+        let best = 0, min = Infinity;
+        secs.forEach((s,i)=>{
+          const mid = s.offsetTop + s.offsetHeight/2;
+          const d = Math.abs(y - mid);
+          if(d < min){ min = d; best = i; }
+        });
+        return best;
+      }
+
+      let currentIndex = 0;
+
+      function go(delta) {
+        if (lock) return;
+        lock = true;
+
+        currentIndex = Math.min(Math.max(currentIndex + delta, 0), secs.length - 1);
+        secs[currentIndex].scrollIntoView({ behavior: "smooth" });
+
+        setTimeout(() => lock = false, lockTime);
+      }
+
+      function updateIndex() {
+        const y = window.scrollY + window.innerHeight / 2;
+        secs.forEach((s, i) => {
+          const mid = s.offsetTop + s.offsetHeight / 2;
+          if (y >= s.offsetTop && y < s.offsetTop + s.offsetHeight) {
+            currentIndex = i;
+          }
+        });
+      }
+
+      window.addEventListener('scroll', updateIndex);
+
+      document.addEventListener('wheel', e=>{
+        const insta = document.querySelector('.sk-ww-instagram-reels');
+        if(insta && insta.matches(':hover')) {
+          // si el scroll cabe en el contenedor, NO interceptamos
+          if(insta.scrollHeight > insta.clientHeight){
+            return; // permite scroll normal en la sección Instagram
+          }
+        }
+        e.preventDefault();
+        go(e.deltaY > 0 ? +1 : -1);
+      }, {passive:false});
+
+      document.addEventListener('keydown', e=>{
+        if(e.key === "ArrowDown"){ e.preventDefault(); go(+1); }
+        else if(e.key === "ArrowUp"){ e.preventDefault(); go(-1); }
+      });
+
+      document.getElementById('btnContacto').addEventListener('click', ()=> {
+        document.getElementById('section5').scrollIntoView({behavior:'smooth'});
+      });
+
+      document.getElementById('cueDown').addEventListener('click', ()=> {
+        document.getElementById('section2').scrollIntoView({behavior:'smooth'});
+      });
+      
+    })();
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const targetId = this.getAttribute('href').slice(1);
+        const targetEl = document.getElementById(targetId);
+        if (targetEl) {
+          e.preventDefault();
+          targetEl.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Abrir imagen o video en modal
+    function openMedia(src) {
+      const modal = document.getElementById("mediaModal");
+      const modalImg = document.getElementById("modalImg");
+      const modalVideo = document.getElementById("modalVideo");
+
+      modal.style.display = "flex"; // centrado con flexbox
+
+      if (src.endsWith(".mp4")) {
+        modalImg.style.display = "none";
+        modalVideo.style.display = "block";
+        modalVideo.src = src;
+        modalVideo.play();
+      } else {
+        modalVideo.pause();
+        modalVideo.style.display = "none";
+        modalImg.style.display = "block";
+        modalImg.src = src;
+      }
+    }
+
+    function closeMedia() {
+      const modal = document.getElementById("mediaModal");
+      const modalVideo = document.getElementById("modalVideo");
+      modal.style.display = "none";
+      modalVideo.pause();
+    }
+
+    function toggleVideo() {
+      const vid = document.getElementById("recapVideo");
+      const overlay = document.getElementById("playOverlay");
+
+      if (vid.paused) {
+        vid.play();
+        overlay.classList.add("hidden");
+      } else {
+        vid.pause();
+        overlay.classList.remove("hidden");
+      }
+    }
+
+    // Si el video termina, vuelve a mostrar el botón de Play
+    document.getElementById("recapVideo").addEventListener("ended", () => {
+      document.getElementById("playOverlay").classList.remove("hidden");
+    });
+
+    const openModal = document.getElementById('openModal');
+    const closeModal = document.getElementById('closeModal');
+    const descubreModal = document.getElementById('descubreModal');
+
+    const openMortgageModal = document.getElementById('openMortgageModal');
+    const closeMortgageModal = document.getElementById('closeMortgageModal');
+    const mortgageModal = document.getElementById('mortgageModal');
+
+    function openOverlay(modalEl){
+      if(!modalEl) return;
+      modalEl.classList.add('show');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeOverlay(modalEl){
+      if(!modalEl) return;
+      modalEl.classList.remove('show');
+      // Si ninguno de los modales está abierto, devolvemos el scroll
+      const anyOpen = document.querySelector('.modal-overlay.show');
+      if(!anyOpen){ document.body.style.overflow = 'auto'; }
+    }
+
+    openModal?.addEventListener('click', () => openOverlay(descubreModal));
+    closeModal?.addEventListener('click', () => closeOverlay(descubreModal));
+
+    openMortgageModal?.addEventListener('click', () => openOverlay(mortgageModal));
+    closeMortgageModal?.addEventListener('click', () => closeOverlay(mortgageModal));
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeOverlay(descubreModal);
+        closeOverlay(mortgageModal);
+      }
+    });
+  </script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
